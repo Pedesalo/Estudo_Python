@@ -44,6 +44,18 @@ resultado = int(max(numeros))
 print(f"O maior número digitado foi: {resultado}")
 
 # 9. Verifique se uma letra digitada é Vogal ou Consoante.
+letra = input("Digite uma letra: ").lower() # .lower() para aceitar "A" ou "a"
+vogais = ["a", "e", "i", "o", "u"]
+
+e_vogal = False
+for n in range(len(vogais)):
+    if vogais[n] == letra:
+        print(f"{letra} é uma vogal")
+        e_vogal = True
+        break
+
+if not e_vogal:
+    print(f"{letra} é uma consoante")
 # 10. Simule um semáforo: peça uma cor. Se "Verde", siga; "Amarelo", atenção; "Vermelho", pare.
 
 # --- REPETIÇÃO: LOOPS (FOR/WHILE) ---
