@@ -1,0 +1,26 @@
+Função,O que ela faz?,Exemplo
+
+print(),Exibe dados na tela (console).,"print(""Olá"")"
+
+input(),Lê uma entrada de texto do usuário.,"nome = input(""Quem é você?"")"
+
+type(),"Retorna o tipo do dado (str, int, float, list).",type(10) -> int
+
+int() / float(),Converte um dado para número inteiro ou decimal.,"int(""5"") -> 5"
+
+str(),Converte um dado para texto (string).,"str(100) -> ""100"""
+
+
+len(),Retorna o tamanho (quantidade de itens) de uma lista ou string.,"len(""Oi"") -> 2"
+
+sum(),Soma todos os itens de uma lista numérica.,"sum([1, 2]) -> 3"
+
+max() / min(),Retorna o maior ou o menor valor de uma coleção.,"max(5, 9) -> 9"
+
+range(),Cria uma sequência de números (muito usado no for).,"range(0, 5) -> 0, 1, 2, 3, 4"
+
+sorted(),Retorna uma lista ordenada (sem alterar a original).,"sorted([3, 1]) -> [1, 3]"
+
+enumerate(),Retorna o índice e o valor de itens em um loop.,"for i, v in enumerate(lista):"
+
+zip(),Agrupa elementos de duas ou mais listas.,"zip([1, 2], ['a', 'b'])"
