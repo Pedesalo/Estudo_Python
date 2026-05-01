@@ -62,7 +62,7 @@ print("----Semaforo----")
 print("\n    1.Verde")
 print("\n    2.Amarelo")
 print("\n    3.Vermelho")
-semaforo = int(input("Digite o valor correspondente a cor"))
+semaforo = int(input("Digite o valor correspondente a cor: "))
 
 match semaforo:
     case 1:
@@ -73,9 +73,12 @@ match semaforo:
         print("Pare")
     case _:
         print("Valor inválido, escolha o número correspondente a cor corretamente!")
+
 # --- REPETIÇÃO: LOOPS (FOR/WHILE) ---
 
 # 11. Imprima a tabuada do 5 (do 1 ao 10) usando um laço 'for'.
+for n in range(1,10)
+    print(f"\n{5*n}")
 # 12. Use um laço 'while' para somar números digitados pelo usuário até que ele digite 0.
 # 13. Crie uma lista de nomes e use um 'for' para imprimir cada nome com "Olá, [nome]!".
 # 14. Faça um programa que conte de 10 até 0 (contagem regressiva).
