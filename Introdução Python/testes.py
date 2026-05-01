@@ -1,12 +1,15 @@
-letra = input("Digite uma letra: ").lower() # .lower() para aceitar "A" ou "a"
-vogais = ["a", "e", "i", "o", "u"]
+print("----Semaforo----")
+print("\n    1.Verde")
+print("\n    2.Amarelo")
+print("\n    3.Vermelho")
+semaforo = int(input("Digite o valor correspondente a cor"))
 
-e_vogal = False
-for n in range(len(vogais)):
-    if vogais[n] == letra:
-        print(f"{letra} é uma vogal")
-        e_vogal = True
-        break
-
-if not e_vogal:
-    print(f"{letra} é uma consoante")
+match semaforo:
+    case 1:
+        print("Siga")
+    case 2:
+        print("Atenção")
+    case 3:
+        print("Pare")
+    case _:
+        print("Valor inválido, escolha o número correspondente a cor corretamente!")

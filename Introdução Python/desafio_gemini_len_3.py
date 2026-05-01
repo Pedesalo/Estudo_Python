@@ -56,8 +56,23 @@ for n in range(len(vogais)):
 
 if not e_vogal:
     print(f"{letra} é uma consoante")
-# 10. Simule um semáforo: peça uma cor. Se "Verde", siga; "Amarelo", atenção; "Vermelho", pare.
 
+# 10. Simule um semáforo: peça uma cor. Se "Verde", siga; "Amarelo", atenção; "Vermelho", pare.
+print("----Semaforo----")
+print("\n    1.Verde")
+print("\n    2.Amarelo")
+print("\n    3.Vermelho")
+semaforo = int(input("Digite o valor correspondente a cor"))
+
+match semaforo:
+    case 1:
+        print("Siga")
+    case 2:
+        print("Atenção")
+    case 3:
+        print("Pare")
+    case _:
+        print("Valor inválido, escolha o número correspondente a cor corretamente!")
 # --- REPETIÇÃO: LOOPS (FOR/WHILE) ---
 
 # 11. Imprima a tabuada do 5 (do 1 ao 10) usando um laço 'for'.
