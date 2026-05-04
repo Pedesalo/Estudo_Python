@@ -5,6 +5,15 @@
 # --- BÁSICO: VARIÁVEIS E ARITMÉTICA ---
 
 # 1. Crie uma variável para o raio de um círculo e calcule a área (Area = 3.14 * raio^2).
+def areaCirculo(raio):
+    area = 3.14 * (raio ** 2)
+    return area
+
+print("Escreva o raio de um circulo, que eu entro o valor da area!")
+raio = float(input("Escreva o raio(cm): "))
+area = areaCirculo(raio)
+print(f"Area do circulo de raio {raio}cm é de {area}cm²")
+
 # 2. Receba um valor em Reais e converta para Dólares (considere a cotação de 5.00).
 # 3. Peça dois números e exiba o resto da divisão entre eles (operador %).
 # 4. Receba uma palavra e exiba quantas letras ela tem (use len).
@@ -77,7 +86,7 @@ match semaforo:
 # --- REPETIÇÃO: LOOPS (FOR/WHILE) ---
 
 # 11. Imprima a tabuada do 5 (do 1 ao 10) usando um laço 'for'.
-for n in range(1,10)
+for n in range(1,10):
     print(f"\n{5*n}")
 # 12. Use um laço 'while' para somar números digitados pelo usuário até que ele digite 0.
 # 13. Crie uma lista de nomes e use um 'for' para imprimir cada nome com "Olá, [nome]!".
