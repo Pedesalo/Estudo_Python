@@ -1,10 +1,9 @@
-# 1. Crie uma variável para o raio de um círculo e calcule a área (Area = 3.14 * raio^2).
-def areaCirculo(raio):
-    area = 3.14 * (raio ** 2)
-    return area
+# 2. Receba um valor em Reais e converta para Dólares (considere a cotação de 5.00).
 
+def correcao_moeda(real):
+    dolar = real * 5.00
+    print(f"R${real}(reais) são ${dolar}(dólares)")
 
-print("Escreva o raio de um circulo, que eu entro o valor da area!")
-raio = float(input("Escreva o raio(cm): "))
-area = areaCirculo(raio)
-print(f"Area do circulo de raio {raio}cm é de {area}cm²")
+print("Conversão de moeda, Real(R$) para Dólar($)")
+real = float(input("Digite o valor a ser convertido: "))
+conversao = correcao_moeda(real)
