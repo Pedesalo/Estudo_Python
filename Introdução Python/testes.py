@@ -1,9 +1,10 @@
-# 2. Receba um valor em Reais e converta para Dólares (considere a cotação de 5.00).
+# 3. Peça dois números e exiba o resto da divisão entre eles (operador %).
 
-def correcao_moeda(real):
-    dolar = real * 5.00
-    print(f"R${real}(reais) são ${dolar}(dólares)")
+def calcular_resto(dividendo, divisor):
+    resultado = dividendo // divisor
+    resto = dividendo % divisor
+    print(f"{dividendo} % {divisor} = {resultado} com resto {resto}.")
 
-print("Conversão de moeda, Real(R$) para Dólar($)")
-real = float(input("Digite o valor a ser convertido: "))
-conversao = correcao_moeda(real)
+dividendo = int(input("Digite o dividendo: "))
+divisor = int(input("Digite o divisor: "))
+calcular_resto(dividendo, divisor)

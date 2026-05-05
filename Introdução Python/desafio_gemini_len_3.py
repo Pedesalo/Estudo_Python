@@ -24,7 +24,18 @@ def correcao_moeda(real):
 print("Conversão de moeda, Real(R$) para Dólar($)")
 real = float(input("Digite o valor a ser convertido: "))
 conversao = correcao_moeda(real)
+
 # 3. Peça dois números e exiba o resto da divisão entre eles (operador %).
+
+def calcular_resto(dividendo, divisor):
+    resultado = dividendo // divisor
+    resto = dividendo % divisor
+    print(f"{dividendo} % {divisor} = {resultado} com resto {resto}.")
+
+dividendo = int(input("Digite o dividendo: "))
+divisor = int(input("Digite o divisor: "))
+calcular_resto(dividendo, divisor)
+
 # 4. Receba uma palavra e exiba quantas letras ela tem (use len).
 # 5. Crie uma variável frase e converta-a toda para MAIÚSCULAS (metodo .upper()).
 
