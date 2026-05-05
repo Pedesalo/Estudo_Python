@@ -113,19 +113,40 @@ match semaforo:
 # 11. Imprima a tabuada do 5 (do 1 ao 10) usando um laço 'for'.
 for n in range(1,10):
     print(f"\n{5*n}")
+
+
 # 12. Use um laço 'while' para somar números digitados pelo usuário até que ele digite 0.
+numero = True
+soma = 0
+while numero != 0:
+    numero = int(input("Digite um número diferente de 0: "))
+    soma = soma + numero
+print(f"A soma dos números é {soma}.")
+
 # 13. Crie uma lista de nomes e use um 'for' para imprimir cada nome com "Olá, [nome]!".
+
+
 # 14. Faça um programa que conte de 10 até 0 (contagem regressiva).
+
+
 # 15. Dada a lista [10, 20, 30, 40, 50], use um loop para calcular a média dos valores.
 
 # --- AVANÇADO: COLEÇÕES E FUNÇÕES ---
 
 # 16. Crie uma lista de 5 números, ordene-os e exiba o menor e o maior valor.
+
+
 # 17. Crie um dicionário 'produto' com nome e preço. Aplique 10% de desconto e exiba o novo preço.
+
+
 # 18. Escreva uma função que receba um nome e retorne "Bom dia, [nome]".
+
+
 # 19. Escreva uma função que verifique se um número é positivo ou negativo (retorne True ou False).
 
 # --- O DESAFIO FINAL ---
 
 # 20. Crie um programa que use 'try/except' para pedir um número ao usuário. 
+
+
 # Se ele digitar uma letra em vez de número, exiba uma mensagem de erro amigável.
