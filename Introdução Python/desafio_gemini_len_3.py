@@ -37,6 +37,9 @@ divisor = int(input("Digite o divisor: "))
 calcular_resto(dividendo, divisor)
 
 # 4. Receba uma palavra e exiba quantas letras ela tem (use len).
+palavra = input("Escreva uma palavra: ")
+print(f"A palavra '{palavra}' tem {len(palavra)} caracteres.")
+
 # 5. Crie uma variável frase e converta-a toda para MAIÚSCULAS (metodo .upper()).
 
 # --- INTERMEDIÁRIO: DECISÃO E LÓGICA ---
