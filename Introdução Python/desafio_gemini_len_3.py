@@ -125,6 +125,11 @@ print(f"A soma dos números é {soma}.")
 
 # 13. Crie uma lista de nomes e use um 'for' para imprimir cada nome com "Olá, [nome]!".
 
+nomes = ['Roberto', 'Lucas', 'Marcelo', 'Junior']
+
+for n in range(0,len(nomes)):
+    print(f"Olá, {nomes[n]}!")
+
 
 # 14. Faça um programa que conte de 10 até 0 (contagem regressiva).
 
