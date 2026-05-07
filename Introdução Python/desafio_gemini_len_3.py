@@ -133,8 +133,15 @@ for n in range(0,len(nomes)):
 
 # 14. Faça um programa que conte de 10 até 0 (contagem regressiva).
 
+for i in range(10):
+    n = 10-(i)
+    print(n)
 
 # 15. Dada a lista [10, 20, 30, 40, 50], use um loop para calcular a média dos valores.
+
+lista = [10, 20, 30, 40, 50]
+print(sum(lista)/len(lista))
+
 
 # --- AVANÇADO: COLEÇÕES E FUNÇÕES ---
 
