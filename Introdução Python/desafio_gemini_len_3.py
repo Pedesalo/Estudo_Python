@@ -140,7 +140,7 @@ for i in range(10):
 # 15. Dada a lista [10, 20, 30, 40, 50], use um loop para calcular a média dos valores.
 
 lista = [10, 20, 30, 40, 50]
-print(sum(lista)/len(lista))
+print(sum(lista)/len(lista)) 
 
 
 # --- AVANÇADO: COLEÇÕES E FUNÇÕES ---
