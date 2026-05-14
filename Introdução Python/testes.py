@@ -1,9 +1,11 @@
-# 18. Escreva uma função que receba um nome e retorne "Bom dia, [nome]".
+# 19. Escreva uma função que verifique se um número é positivo ou negativo (retorne True ou False).
 
-def cumprimento(nome):
-    return f"Bom dia, {nome}"
+def pos_neg(numero):
+    if numero > 0:
+        numero = True
+    else:
+        numero = False
+    print(numero)
 
-se_identifique = input("Qual o seu nome: ")
-
-nome = cumprimento(se_identifique)
-print(nome)
+numero = -1
+pos_neg(numero)
