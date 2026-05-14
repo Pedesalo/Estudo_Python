@@ -175,6 +175,16 @@ print(nome)
 
 # 19. Escreva uma função que verifique se um número é positivo ou negativo (retorne True ou False).
 
+def pos_neg(numero):
+    if numero > 0:
+        numero = True
+    else:
+        numero = False
+    print(numero)
+
+numero = -1
+pos_neg(numero)
+
 # --- O DESAFIO FINAL ---
 
 # 20. Crie um programa que use 'try/except' para pedir um número ao usuário. 

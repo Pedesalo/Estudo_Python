@@ -1,11 +1,7 @@
-# 19. Escreva uma função que verifique se um número é positivo ou negativo (retorne True ou False).
+# 20. Crie um programa que use 'try/except' para pedir um número ao usuário. 
 
-def pos_neg(numero):
-    if numero > 0:
-        numero = True
-    else:
-        numero = False
-    print(numero)
-
-numero = -1
-pos_neg(numero)
+try:
+    numero = int(input("escreva um número inteiro: "))
+    print(f"você escreveu o número {numero}.")
+except:
+    print("Era pra você escrever um número inteiro, não use letras nem números de ponto flutuante da próxima vez!")
