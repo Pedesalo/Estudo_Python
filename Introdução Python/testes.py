@@ -1,8 +1,5 @@
-# 16. Crie uma lista de 5 números, ordene-os e exiba o menor e o maior valor.
+# 17. Crie um dicionário 'produto' com nome e preço. Aplique 10% de desconto e exiba o novo preço.
 
-lista = [1,3,2,5,4]
-listaOrdem = sorted(lista)
-listaMenor = min(lista)
-listaMaior = max(lista)
+produto = {"nome":"notebook", "preço": 3000.50}
 
-print(f"Os números são: {lista}, em ordem crescente fica: {listaOrdem}, o maior número é: {listaMaior}, e o menor número é: {listaMenor}.")
+print(f'{produto["nome"].capitalize()} custa agora com 10% de desconto R${produto["preço"]*0.90:.2f}.')
