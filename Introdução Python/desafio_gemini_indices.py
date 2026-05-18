@@ -1,10 +1,14 @@
 # Lista de temperaturas (da segunda-feira passada até domingo)
 temperaturas = [28.5, 30.1, 29.0, 32.4, 26.8, 25.0, 27.3]
+dias = {"Segunda":0,"Terça":1,"Quarta":2,"Quinta":3,"Sexta":4,"Sábado":5,"Domingo":6}
 
 # --- SEU OBJETIVO ---
 # 1. Acesse e imprima a temperatura de quarta-feira (quarto elemento).
+print(f"Temperatura de Quarta-Feira é {temperaturas[dias['Quarta']]}")
 # 2. Acesse e imprima a temperatura do último dia (domingo) usando índice negativo.
+print(f'Temperaduta de Domingo é {temperaturas[-1]}')
 # 3. Extraia uma sublista apenas com os dias do fim de semana (sexta, sábado e domingo).
+print(f'As Temperaturas de Sexta-feira até Domingo serão: {temperaturas[4:7]}')
 
 # --- COMENTÁRIO GUIA (Siga estes passos):
 # Passo 1: Lembre-se que o Python começa a contar os índices do 0. Então, segunda é 0, terça é 1...
@@ -17,8 +21,14 @@ cidades_acessos = ['Joinville', 'Blumenau', 'Joinville', 'Florianópolis', 'Join
 
 # --- SEU OBJETIVO ---
 # Criar um dicionário chamado 'contagem' onde a chave é o nome da cidade e o valor é a quantidade de acessos.
+contagem = {}
+for cidade in cidades_acessos:
+    if cidade in contagem:
+        contagem[cidade] = contagem[cidade] + 1
+    else:
+        contagem[cidade] = 1
 # O resultado final deve ser: {'Joinville': 3, 'Blumenau': 2, 'Florianópolis': 1, 'Itajaí': 1}
-
+print(contagem)
 # --- COMENTÁRIO GUIA (Siga estes passos):
 # Passo 1: Inicialize um dicionário vazio. ex: contagem = {}
 # Passo 2: Faça um laço 'for' para percorrer cada cidade da lista 'cidades_acessos'.

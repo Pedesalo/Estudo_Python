@@ -1,16 +1,30 @@
-# Lista de temperaturas (da segunda-feira passada até domingo)
-temperaturas = [28.5, 30.1, 29.0, 32.4, 26.8, 25.0, 27.3]
-dias = {"Segunda":0,"Terça":1,"Quarta":2,"Quinta":3,"Sexta":4,"Sábado":5,"Domingo":6}
+estoque = [
+    {"id": 101, "nome": "Placa ESP32", "preco": 45.00, "quantidade": 15},
+    {"id": 102, "nome": "Sensor LDR", "preco": 5.50, "quantidade": 50},
+    {"id": 103, "nome": "Cabo Jumper (40 un)", "preco": 12.00, "quantidade": 30}
+]
 
 # --- SEU OBJETIVO ---
-# 1. Acesse e imprima a temperatura de quarta-feira (quarto elemento).
-print(f"Temperatura de Quarta-Feira é {temperaturas[dias['Quarta']]}")
-# 2. Acesse e imprima a temperatura do último dia (domingo) usando índice negativo.
-print(f'Temperaduta de Domingo é {temperaturas[-6]}')
-# 3. Extraia uma sublista apenas com os dias do fim de semana (sexta, sábado e domingo).
-print(f'As Temperaturas de Sexta-feira até Domingo serão: {temperaturas[4:7]}')
+# 1. Usuário digita um ID (ex: 102).
+# 2. Seu programa deve percorrer a lista, encontrar o produto e exibir o nome e o valor total em estoque (preco * quantidade).
+# 3. Se o ID não existir, avise o usuário.
 
 # --- COMENTÁRIO GUIA (Siga estes passos):
-# Passo 1: Lembre-se que o Python começa a contar os índices do 0. Então, segunda é 0, terça é 1...
-# Passo 2: Para pegar o último elemento direto, use o índice [-1].
-# Passo 3: No fatiamento [inicio:fim], o índice de 'fim' não é incluído. Descubra onde começa a sexta-feira e vá até o final.
+# Passo 1: Use a função input() para pedir o ID ao usuário (lembre-se de converter para int).
+str_id = int(input("Escolha entre os usuários 101,102,103: "))
+# Passo 2: Crie uma variável 'produto_encontrado = False' para te ajudar no controle.
+produto_encontrado = False
+# Passo 3: Use um 'for' para iterar pela lista 'estoque'. Cada item do loop será um dicionário (ex: 'produto').
+for produto in estoque:
+# Passo 4: Dentro do loop, acesse a chave do ID do dicionário: if produto["id"] == id_digitado:
+    if produto['id'] == str_id:
+# Passo 5: Se achar, calcule o total (preco * quantidade), imprima as informações e mude 'produto_encontrado' para True. Use o comando 'break' para parar o loop.
+        faturamento = produto['preco'] * produto['quantidade']
+        print(f'Preço total do produto é {faturamento}')
+        produto_encontrado = True
+        break
+    else:
+        continue
+# Passo 6: Fora do loop, use um 'if not produto_encontrado:' para exibir a mensagem de erro caso o ID não exista.
+if not produto_encontrado:
+    print("ID não existe.")
