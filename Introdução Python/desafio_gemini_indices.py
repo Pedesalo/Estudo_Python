@@ -50,11 +50,23 @@ estoque = [
 
 # --- COMENTÁRIO GUIA (Siga estes passos):
 # Passo 1: Use a função input() para pedir o ID ao usuário (lembre-se de converter para int).
+str_id = int(input("Escolha entre os usuários 101,102,103: "))
 # Passo 2: Crie uma variável 'produto_encontrado = False' para te ajudar no controle.
+produto_encontrado = False
 # Passo 3: Use um 'for' para iterar pela lista 'estoque'. Cada item do loop será um dicionário (ex: 'produto').
+for produto in estoque:
 # Passo 4: Dentro do loop, acesse a chave do ID do dicionário: if produto["id"] == id_digitado:
+    if produto['id'] == str_id:
 # Passo 5: Se achar, calcule o total (preco * quantidade), imprima as informações e mude 'produto_encontrado' para True. Use o comando 'break' para parar o loop.
+        faturamento = produto['preco'] * produto['quantidade']
+        print(f'Preço total do produto é {faturamento}')
+        produto_encontrado = True
+        break
+    else:
+        continue
 # Passo 6: Fora do loop, use um 'if not produto_encontrado:' para exibir a mensagem de erro caso o ID não exista.
+if not produto_encontrado:
+    print("ID não existe.")
 
 #----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -82,3 +94,8 @@ vendas = [
 # Passo 4: Verifique se o 'status' NÃO está no dicionário 'status_agrupado'.
 # Passo 5: Se NÃO estiver, você precisa criar a chave e iniciar ela com uma LISTA vazia: status_agrupado[status] = []
 # Passo 6: Agora que a chave com a lista existe (ou acabou de ser criada), use o método .append(cliente) para adicionar o nome do cliente àquela lista.
+status_agrupado = {}
+
+for staus in vendas:
+    if staus in status_agrupado:
+        
