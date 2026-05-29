@@ -1,32 +1,13 @@
-
-vendas = [
-    {"cliente": "Ana", "valor": 150.00, "status": "Pago"},
-    {"cliente": "Carlos", "valor": 85.50, "status": "Pendente"},
-    {"cliente": "Bruno", "valor": 200.00, "status": "Pago"},
-    {"cliente": "Ana", "valor": 45.00, "status": "Cancelado"},
-    {"cliente": "Diego", "valor": 120.00, "status": "Pendente"}
-]
-
-# --- SEU OBJETIVO ---
-# Criar um dicionário chamado 'status_agrupado'.
-# O resultado esperado deve ser:
-# {
-#    "Pago": ["Ana", "Bruno"],
-#    "Pendente": ["Carlos", "Diego"],
-#    "Cancelado": ["Ana"]
-# }
-
-# --- COMENTÁRIO GUIA (Siga estes passos):
-# Passo 1: Comece com um dicionário vazio: status_agrupado = {}
-# Passo 2: Percorra a lista 'vendas' com um laço 'for'.
-# Passo 3: Para cada venda, extraia o status e o cliente em variáveis para facilitar.
-# Passo 4: Verifique se o 'status' NÃO está no dicionário 'status_agrupado'.
-# Passo 5: Se NÃO estiver, você precisa criar a chave e iniciar ela com uma LISTA vazia: status_agrupado[status] = []
-# Passo 6: Agora que a chave com a lista existe (ou acabou de ser criada), use o método .append(cliente) para adicionar o nome do cliente àquela lista.
-status_agrupado = {}
-
-for status in vendas:
-    if status in status_agrupado:
-        
-    else:
-        status_agrupado['status'] = []
+# --- Desafio 2 (Removendo itens) ---
+# 1. Crie uma lista com 5 nomes de animais.
+animal = ['macaco','tartaruga','polvo','onça','coruja']
+# 2. Mostre os animais na tela e peça para o usuário digitar um nome para remover.
+animais = input(f"escolha um desses animais '{animal}': ")
+# 3. Use 'if' para verificar se o animal digitado está na lista.
+if animais in animal:
+# 4. Se estiver, remova o animal (.remove) e mostre a lista atualizada.
+    animal.remove(animais)
+    print(f'{animais} removido, a lista de animais é {animal}')
+# 5. Se não estiver, use o 'else' para mostrar uma mensagem de erro.
+else:
+    print('erro')
