@@ -1,13 +1,11 @@
-# --- Desafio 2 (Removendo itens) ---
-# 1. Crie uma lista com 5 nomes de animais.
-animal = ['macaco','tartaruga','polvo','onça','coruja']
-# 2. Mostre os animais na tela e peça para o usuário digitar um nome para remover.
-animais = input(f"escolha um desses animais '{animal}': ")
-# 3. Use 'if' para verificar se o animal digitado está na lista.
-if animais in animal:
-# 4. Se estiver, remova o animal (.remove) e mostre a lista atualizada.
-    animal.remove(animais)
-    print(f'{animais} removido, a lista de animais é {animal}')
-# 5. Se não estiver, use o 'else' para mostrar uma mensagem de erro.
-else:
-    print('erro')
+# 1. Crie uma lista chamada 'produtos' com 4 nomes de eletrônicos.
+produtos = ["Smartphone", "Smart TV", "Notebook", "Fone de Ouvido Bluetooth"]
+# 2. Crie outra lista chamada 'precos' com 4 valores numéricos (preços).
+precos = [2500.00, 3500.00, 4200.00, 300.00]
+# 3. Use um laço 'for' para percorrer os índices de 0 a 3 (use range).
+for i in range(0,4):
+# 4. Dentro do laço, acesse o produto e o preço correspondente ao índice atual.
+    produto = produtos[i]
+    preco = precos[i]
+# 5. Imprima formatado na tela: "Produto: X - Preço: R$ Y".
+    print(f"Produto: {produto} - Preço: R$ {preco}")
