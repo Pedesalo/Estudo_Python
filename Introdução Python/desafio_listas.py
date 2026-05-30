@@ -52,7 +52,7 @@ produtos = ["Smartphone", "Smart TV", "Notebook", "Fone de Ouvido Bluetooth"]
 # 2. Crie outra lista chamada 'precos' com 4 valores numéricos (preços).
 precos = [2500.00, 3500.00, 4200.00, 300.00]
 # 3. Use um laço 'for' para percorrer os índices de 0 a 3 (use range).
-for i in range(0,-1):
+for i in range(0,4):
 # 4. Dentro do laço, acesse o produto e o preço correspondente ao índice atual.
     produto = produtos[i]
     preco = precos[i]
@@ -61,11 +61,22 @@ for i in range(0,-1):
 
 # --- Desafio 5 (Filtragem) ---
 # 1. Crie uma lista inicial com 10 números misturados (pares e ímpares).
+pares_impares = [1,2,3,4,5,6,7,8,9,10]
 # 2. Crie duas listas novas e vazias: 'pares' e 'impares'.
+pares = []
+impares = []
 # 3. Use um laço 'for' para avaliar cada número da lista inicial.
+for i in range(len(pares_impares)):
 # 4. Se o número for divisível por 2 (num % 2 == 0), adicione na lista 'pares'.
+    if pares_impares[i] % 2 == 0:
+        pares_impares.append(pares)
 # 5. Se não for, adicione na lista 'impares'.
+    else:
+         pares_impares.append(impares)
 # 6. Imprima as três listas ao final.
+print(f'lista: {pares_impares}')
+print(f'pares: {pares}')
+print(f'impares: {impares}')
 
 
 # --- Desafio 6 (Estatísticas) ---
